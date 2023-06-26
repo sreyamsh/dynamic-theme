@@ -1,113 +1,167 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="m-8">
+      <h2 className="text-lg font-semibold text-slate-900">Color shades</h2>
+      <div className="mt-2 flex flex-col gap-4">
+        <p className="text-primary-500 font-bold capitalize">primary</p>
+        <div className="inline-flex overflow-hidden rounded-md">
+          <div className="bg-primary-50 text-primary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            50
+          </div>
+          <div className="bg-primary-100 text-primary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            100
+          </div>
+          <div className="bg-primary-200 text-primary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            200
+          </div>
+          <div className="bg-primary-300 text-primary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            300
+          </div>
+          <div className="bg-primary-400 text-primary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            400
+          </div>
+          <div className="bg-primary-500 text-primary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            500
+          </div>
+          <div className="bg-primary-600 text-primary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            600
+          </div>
+          <div className="bg-primary-700 text-primary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            700
+          </div>
+          <div className="bg-primary-800 text-primary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            800
+          </div>
+          <div className="bg-primary-900 text-primary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            900
+          </div>
+        </div>
+        <p className="text-secondary-500 font-bold capitalize">secondary</p>
+        <div className="inline-flex overflow-hidden rounded-md">
+          <div className="bg-secondary-50 text-secondary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            50
+          </div>
+          <div className="bg-secondary-100 text-secondary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            100
+          </div>
+          <div className="bg-secondary-200 text-secondary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            200
+          </div>
+          <div className="bg-secondary-300 text-secondary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            300
+          </div>
+          <div className="bg-secondary-400 text-secondary-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            400
+          </div>
+          <div className="bg-secondary-500 text-secondary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            500
+          </div>
+          <div className="bg-secondary-600 text-secondary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            600
+          </div>
+          <div className="bg-secondary-700 text-secondary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            700
+          </div>
+          <div className="bg-secondary-800 text-secondary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            800
+          </div>
+          <div className="bg-secondary-900 text-secondary-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            900
+          </div>
+        </div>
+        <p className="text-nuetral-500 font-bold capitalize">nuetral</p>
+        <div className="inline-flex overflow-hidden rounded-md">
+          <div className="bg-nuetral-50 text-nuetral-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            50
+          </div>
+          <div className="bg-nuetral-100 text-nuetral-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            100
+          </div>
+          <div className="bg-nuetral-200 text-nuetral-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            200
+          </div>
+          <div className="bg-nuetral-300 text-nuetral-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            300
+          </div>
+          <div className="bg-nuetral-400 text-nuetral-900 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            400
+          </div>
+          <div className="bg-nuetral-500 text-nuetral-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            500
+          </div>
+          <div className="bg-nuetral-600 text-nuetral-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            600
+          </div>
+          <div className="bg-nuetral-700 text-nuetral-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            700
+          </div>
+          <div className="bg-nuetral-800 text-nuetral-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            800
+          </div>
+          <div className="bg-nuetral-900 text-nuetral-50 grid h-16 w-16 place-items-end p-1 font-semibold leading-none">
+            900
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="mt-16">
+        <h2 className="text-lg font-semibold text-slate-900">Color opacity</h2>
+        <div className="mt-2 grid gap-6">
+          <div className="flex gap-4" data-theme="rose">
+            <div className="bg-primary-600 text-primary-50 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              100%
+            </div>
+            <div className="bg-primary-600 text-primary-50 grid h-16 w-16 place-items-end rounded-md bg-opacity-70 p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              70%
+            </div>
+            <div className="bg-primary-600/50 text-primary-900 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              50%
+            </div>
+            <div className="bg-primary-600 text-primary-900 grid h-16 w-16 place-items-end rounded-md bg-opacity-30 p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              30%
+            </div>
+            <div className="bg-primary-600/[0.1] text-primary-900 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              10%
+            </div>
+          </div>
+          <div className="flex gap-4" data-theme="rainforest">
+            <div className="bg-secondary-600 text-secondary-50 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              100%
+            </div>
+            <div className="bg-secondary-600 text-secondary-50 grid h-16 w-16 place-items-end rounded-md bg-opacity-70 p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              70%
+            </div>
+            <div className="bg-secondary-600/50 text-secondary-900 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              50%
+            </div>
+            <div className="bg-secondary-600 text-secondary-900 grid h-16 w-16 place-items-end rounded-md bg-opacity-30 p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              30%
+            </div>
+            <div className="bg-secondary-600/[0.1] text-secondary-900 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              10%
+            </div>
+          </div>
+          <div className="flex gap-4" data-theme="candy">
+            <div className="bg-nuetral-600 text-nuetral-50 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              100%
+            </div>
+            <div className="bg-nuetral-600 text-nuetral-50 grid h-16 w-16 place-items-end rounded-md bg-opacity-70 p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              70%
+            </div>
+            <div className="bg-nuetral-600/50 text-nuetral-900 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              50%
+            </div>
+            <div className="bg-nuetral-600 text-nuetral-900 grid h-16 w-16 place-items-end rounded-md bg-opacity-30 p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              30%
+            </div>
+            <div className="bg-nuetral-600/[0.1] text-nuetral-900 grid h-16 w-16 place-items-end rounded-md p-1 font-semibold leading-none ring-2 ring-inset ring-black/10">
+              10%
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }

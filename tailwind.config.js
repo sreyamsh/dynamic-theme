@@ -1,18 +1,25 @@
 /** @type {import('tailwindcss').Config} */
+
+import { multiThemePlugin } from "./plugins/themePlugin";
+
+// import themes1 from "./plugins/themes1.json";
+// import themes1 from "./plugins/themes2.json";
+import { theme } from "./plugins/theme1";
+// import { theme } from "./plugins/theme2";
+
+const getTheme = () => {
+  return theme;
+};
+
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-}
+  plugins: [
+    multiThemePlugin({
+      colorTheme: getTheme(),
+    }),
+  ],
+};
